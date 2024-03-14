@@ -1,4 +1,4 @@
-public static class Book extends Item {
+public class Book extends Item {
         public String author;
         public int numberOfPages;
         public String genre;
