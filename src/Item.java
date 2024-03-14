@@ -1,4 +1,4 @@
-public static abstract class Item {
+public abstract class Item {
         public String name;
         private String description;
 
