@@ -1,24 +1,24 @@
-public static abstract class Item {
-        public String name;
-        private String description;
+public static class Book extends Item {
+        public String author;
+        public int numberOfPages;
+        public String genre;
 
-        public String getDescription() {
-            return description;
+        public Book(String name, String description, String ID, int price, String author, int numberOfPages,
+                    String genre) {
+            super(name, description, ID, price);
+            this.author = author;
+            this.numberOfPages = numberOfPages;
+            this.genre = genre;
         }
 
-        public void setDescription(String description) {
-            this.description = description;
+        public void showInfo() {
+            System.out.println("Book name: " + name);
+            System.out.println("Book description: " + getDescription());
+            System.out.println("Book ID: " + ID);
+            System.out.println("Book price: " + price);
+            System.out.println("Book author: " + author);
+            System.out.println("Bool page: " + numberOfPages);
+            System.out.println("Book genre: " + genre);
         }
 
-        protected String ID;
-        int price;
-
-        public abstract void showInfo();
-
-        public Item(String name, String description, String ID, int price) {
-            this.name = name;
-            this.description = description;
-            this.ID = ID;
-            this.price = price;
-        }
     }
