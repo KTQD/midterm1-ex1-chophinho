@@ -1,4 +1,4 @@
-public static class MP3 extends Item {
+public class MP3 extends Item {
         public String duration;
 
         public MP3(String name, String description, String ID, int price, String duration) {
